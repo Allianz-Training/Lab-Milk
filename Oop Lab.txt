@@ -1,0 +1,30 @@
+Class
+1. Banner
+2. Advertising
+
+
+Property
+1. Banner
+	- Searching box
+	- Menu
+	- Cart
+
+2. Advertising
+	- Carousel
+	- Pop-up
+	- Tracking
+
+
+Action
+1. Banner
+	- Input the information ---> Go to catagories
+	- Press menu to go to other page
+	- Show what products which you select
+
+2. Advertising
+	- Go to the next advertising when press at the button
+	- When we go to this website, the pop-up advertising will appear 
+	- Show the advertising which related to the behavior of the user
+
+
+
