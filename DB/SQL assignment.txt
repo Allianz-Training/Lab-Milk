@@ -1,0 +1,41 @@
+3.2.1.
+SELECT sname,age
+FROM Sailors
+
+3.2.2.
+SELECT DISTINCT sname,age
+FROM Sailors
+
+3.2.3.
+SELECT sname
+FROM Sailors
+INNER JOIN Reserves
+on Sailors.sid = Reserves.sid
+WHERE Reserves.bid = 103;
+
+3.2.4.
+SELECT sid
+FROM Reserves
+INNER JOIN Boats
+on Reserves.bid = Boats.bid
+WHERE lower(Boats.Color) = "red" ;
+
+3.2.5.
+SELECT sname
+FROM Sailors
+INNER JOIN Reserves
+on Sailors.sid = Reserves.sid
+INNER JOIN Boats
+on Reserves.bid = Boats.bid
+WHERE lower(Boats.Color) = 'red' ;
+
+
+3.2.6.
+SELECT Color
+FROM Boats
+INNER JOIN Reserves
+on Boats.bid = Reserves.bid
+INNER JOIN Sailors
+on Reserves.sid = Sailors.sid
+WHERE Sailors.sname = 'Lubber' ;
+
