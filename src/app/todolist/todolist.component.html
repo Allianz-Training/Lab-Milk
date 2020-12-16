@@ -1,0 +1,14 @@
+<div>
+    <h2>{{ task }}</h2>
+    <ul>
+        <li *ngFor="let item of works">
+            <span>{{ item }}</span> <button (click)="deleteTask(work)" >Delete</button>
+        </li>
+    </ul>
+    <!-- <div class="header">
+        <b>Task :</b> <input [(ngModel)] = "work" /> <button (click)="addTask(work)" >Add</button>
+    </div> -->
+
+</div>
+
+
