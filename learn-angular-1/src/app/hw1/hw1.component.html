@@ -1,0 +1,51 @@
+<head>
+    <style>
+        #list:hover{
+            cursor: pointer; 
+            background-color: palevioletred;
+        }
+        #list:visited{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<h4>ToDoListComponent</h4>
+<div>
+    
+    <p>{{ taskk }}</p>
+    
+    <div> 
+        <ul>
+        <li (click)="showDescription()" id="list" *ngFor="let item of tasks" style="width: 200px; border: 1px solid gray; text-align: center;padding: 7px;"> 
+            <span>{{ item }}</span> <button (click)="deleteTask(task)" >Delete</button>
+        </li>
+            
+        </ul>
+    </div>
+
+    <div class="header" style="width: 500px; height: 140px;padding-top: 10px;padding-left: 20px; border: 1px solid gray; text-align: left;">  
+        <b>Add task : </b>
+        <br>
+        <div style="padding: 10px;">
+            <b style="padding-left: 30px;"> Name : </b>
+            <input [(ngModel)] = "task" />
+        </div>
+
+        <div style="padding: 10px;">
+            <b>Description : </b>
+            <input [(ngModel)] = "description" >
+         </div>
+
+        <div style="text-align: center;">
+            <!-- <button (click)="addTask(task)">Add</button> -->
+        </div>
+        
+    </div>
+
+    <!-- <div id = "Des">
+        <li *ngFor="let detail of descriptions">
+            <span></span>
+        </li>
+    </div> -->
+
+</div>
